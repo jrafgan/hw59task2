@@ -35,10 +35,6 @@ class App extends Component {
         this.loadData();
     }
 
-    shouldComponentUpdate(nextProps, nextState) {
-        return this.state.urls === nextState.urls
-    }
-
     newJokes() {
         this.loadData();
     }
