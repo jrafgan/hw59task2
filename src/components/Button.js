@@ -1,11 +1,13 @@
-import React, {PureComponent} from 'react';
+import React, {Component} from 'react';
 
-class Button extends PureComponent {
-    constructor(props) {
-        super(props);
+class Button extends Component {
+
+    shouldComponentUpdate(nextProps, nextState, nextContext) {
+        return false
     }
 
     render() {
+
         return(
             <div>
                 <button className="btn" onClick={this.props.onClick}>Get 5 more Jokes</button>
