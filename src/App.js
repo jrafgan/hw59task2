@@ -22,7 +22,6 @@ class App extends Component {
                 let copy = this.state.jokes;
                 copy.push(post.value);
                 this.setState({jokes: copy});
-                console.log(post.value);
                 return post;
             });
 
